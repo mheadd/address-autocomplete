@@ -2,7 +2,7 @@
 
 ![Address aotocomplete](https://raw.githubusercontent.com/mheadd/address-autocomplete/gh-pages/autocomplete.gif "Address aotocomplete")
 
-A simple autocomplete example to help improve address quality on government web form submissions.
+A simple address autocomplete example meant to help improve address quality on government web form submissions.
 
 Made with:
 
