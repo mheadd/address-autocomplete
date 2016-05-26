@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Address Autocomplete example</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/spacelab.min.css" rel="stylesheet">
+    <link href="css/easy-autocomplete.themes.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body role="document">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Autocomplete Example</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" role="main">
+
+      <div class="page-header">
+        <h2>Enter Your Name & Address</h2>
+      </div>
+
+        <form class="form-horizontal" id="address-form">
+          <div class="row">
+             <div class="form-group">
+              <label class="col-sm-2">Name</label>
+              <div class="col-sm-10"><input type="text" name="citizen" class="form-control" /></div>
+              </div>
+         </div>
+          <div class="row">
+              <div class="form-group">
+              <label class="col-sm-2">House Number</label>
+              <div class="col-sm-2"><input type="text" name="house"class="form-control" /></div>
+              <label class="col-sm-1">Street Name</label>
+              <div class="col-sm-4"><input type="text" id="street" name="street" class="form-control" /></div>
+              <label class="col-sm-1">Unit</label>
+              <div class="col-sm-2"><input type="text" id="street" name="street" class="form-control" /></div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group">
+              <label class="col-sm-2">City / Town</label>
+              <div class="col-sm-4"><input type="text" id="subdivision" name="subdivision" class="form-control" /></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2">State</label>
+              <div class="col-sm-2"><input type="text" name="state" class="form-control" maxlength="2" placeholder="NY"/></div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2">Zip Code</label>
+              <div class="col-sm-2"><input type="text" name="zip" class="form-control" maxlength="5"/></div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="form-group">
+              <div class="col-sm-4"><button type="submit" class="btn btn-default">Submit</button></div>
+            </div>
+          </div>
+      </form>
+      <div id="form-data"></div>
+    </div> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easy-autocomplete.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
