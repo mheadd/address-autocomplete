@@ -1,7 +1,7 @@
 // URL & query strings for CartoDB API calls.
 var url_base = 'https://markh.cartodb.com/api/v2/sql?q=';
-var street_name_query = 'SELECT%20DISTINCT(fullname)%20FROM%20onondaga_county_roads%20WHERE%20fullname%20LIKE%20%27[street-name]%25%27';
-var subdivision_name_query = 'SELECT%20name%20FROM%20onondaga_county_subdivisdions%20WHERE%20name%20LIKE%20%27[sub-name]%25%27';
+var street_name_query = 'SELECT%20DISTINCT(streetname%20%7C%7C%20%27%20%27%20%7C%7C%20posttype)%20AS%20street%20FROM%20addresspoints_onondaga%20WHERE%20streetname%20LIKE%20%27[street-name]%25%27';
+var subdivision_name_query = 'SELECT%20citytownna%20FROM%20addresspoints_onondaga_citytown_name%20WHERE%20citytownna%20LIKE%20%27[sub-name]%25%27';
 
 // Autocomplete options for street name.
 var street_options = {
@@ -14,7 +14,7 @@ var street_options = {
   listLocation: function(data) {
     var choices = [];
     for (var i=0; i<data.rows.length; i++) {
-      choices.push({ choice: data.rows[i].fullname });
+      choices.push({ choice: data.rows[i].street });
     }
     return choices;
   },
@@ -33,7 +33,7 @@ var subdivision_options = {
   listLocation: function(data) {
     var choices = [];
     for (var i=0; i<data.rows.length; i++) {
-      choices.push({ choice: data.rows[i].name });
+      choices.push({ choice: data.rows[i].citytownna });
     }
     return choices;
   },
