@@ -7,7 +7,7 @@ A simple address autocomplete example meant to help improve address quality on g
 
 ## Getting the Data
 
-Data on street names and subdivision names is from the [NYS GIS Clearinghouse](http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=1278). A [different branch](https://github.com/mheadd/address-autocomplete/tree/census) of this project uses data  from the [U.S. Census Bureau](https://www.census.gov/geo/maps-data/data/tiger-line.html). Note - this example uses data for [Onondaga County, NY](https://en.wikipedia.org/wiki/Onondaga_County,_New_York).
+Data on street names and subdivision names is from the [NYS GIS Clearinghouse](http://gis.ny.gov/gisdata/inventories/details.cfm?DSID=921). A [different branch](https://github.com/mheadd/address-autocomplete/tree/census) of this project uses data  from the [U.S. Census Bureau](https://www.census.gov/geo/maps-data/data/tiger-line.html). Note - this example uses data for [Onondaga County, NY](https://en.wikipedia.org/wiki/Onondaga_County,_New_York).
 
 Downloaded shapefiles from the NYS GIS Clearinghouse can be loaded into CartoDB. Then [CartoDB's SQL API](https://docs.cartodb.com/cartodb-platform/sql-api/) powers the autocomplete in street name and city / town name fields.
 
